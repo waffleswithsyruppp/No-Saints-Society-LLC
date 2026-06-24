@@ -1,102 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>No Saints Society</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Saints Society</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
 <div class="popup" id="popup">
-    <div class="popup-content">
-        <span class="close-popup" onclick="closePopup()">&times;</span>
-        <h2>JOIN THE SOCIETY</h2>
-        <p>Subscribe for exclusive discounts, limited drops, and private releases.</p>
-        <input type="email" placeholder="Enter Email">
-        <button>Subscribe</button>
-    </div>
+  <div class="popup-content">
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+    <h2>JOIN THE SOCIETY</h2>
+    <p>Subscribe for exclusive discounts, limited drops, and private releases.</p>
+    <input type="email" placeholder="Enter Email">
+    <button onclick="closePopup()">Subscribe</button>
+  </div>
 </div>
 
-<button class="cart-button" onclick="toggleCart()">
-    Cart (<span id="cartCount">0</span>)
-</button>
+<button class="cart-button" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
 
 <div class="cart" id="cart">
-    <h2>Your Cart</h2>
-    <div id="cartItems"></div>
-    <h3>Total: $<span id="cartTotal">0</span></h3>
-    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <h3>Total: $<span id="cartTotal">0</span></h3>
+  <button class="checkout-btn" onclick="checkout()">Checkout</button>
 </div>
 
 <section class="hero">
-    <img src="images/NSS home page.png" alt="No Saints Society" class="hero-image">
+  <img src="images/NSS home page.png" alt="No Saints Society" class="hero-image">
 </section>
 
-<section class="products">
-    <h2>DROP 001</h2>
-
-    <div class="product-grid">
-
-        <div class="product-card">
-            <a href="fallen-angel-hoodie.html" target="_blank">
-                <img src="images/Angel Hoodie 01.png" alt="Fallen Angel Hoodie">
-            </a>
-            <div class="product-info">
-                <h3>Fallen Angel Hoodie</h3>
-                <p>$75</p>
-                <p class="stock">LIMITED DROP — ONLY 7 LEFT</p>
-                <a href="fallen-angel-hoodie.html" target="_blank">
-                    <button>View Product</button>
-                </a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <a href="fallen-angel-tee.html" target="_blank">
-                <img src="images/Angel Tshirt 01.png" alt="Fallen Angel Tee">
-            </a>
-            <div class="product-info">
-                <h3>Fallen Angel Tee</h3>
-                <p>$45</p>
-                <p class="stock">LIMITED DROP — ONLY 12 LEFT</p>
-                <a href="fallen-angel-tee.html" target="_blank">
-                    <button>View Product</button>
-                </a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <a href="nss-angel-keychain.html" target="_blank">
-                <img src="images/angel doll 01.png" alt="NSS Angel Keychain">
-            </a>
-            <div class="product-info">
-                <h3>NSS Angel Keychain</h3>
-                <p>$25</p>
-                <p class="stock">LIMITED DROP — ONLY 20 LEFT</p>
-                <a href="nss-angel-keychain.html" target="_blank">
-                    <button>View Product</button>
-                </a>
-            </div>
-        </div>
-
-    </div>
+<section class="products" id="shop">
+  <h2>DROP 001</h2>
+  <div class="product-grid" id="productGrid"></div>
 </section>
 
 <footer>
-    <h3>NO SAINTS SOCIETY</h3>
-
-    <p>
-        Operated by WAFFLES CREATIVE LLC<br>
-        PO BOX 60063<br>
-        PALM BAY, FL 32906
-    </p>
-
-    <p>Exclusive. Private. No Exceptions.</p>
+  <h3>NO SAINTS SOCIETY</h3>
+  <p>
+    Operated by WAFFLES CREATIVE LLC<br>
+    PO BOX 60063<br>
+    PALM BAY, FL 32906
+  </p>
+  <p>Exclusive. Private. No Exceptions.</p>
 </footer>
 
+<script src="products.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
