@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Saints Society</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="hero" id="home">
+    <img src="images/NSS home page.png" alt="No Saints Society homepage" class="hero-image" />
+  </section>
+
+  <section class="products" id="shop">
+    <p class="eyebrow">DROP 001</p>
+    <h2>Featured Drop</h2>
+
+    <div class="product-grid">
+      <article class="product-card">
+        <img src="images/Angel Hoodie 01.png" alt="Fallen Angel Hoodie" />
+        <div class="product-info">
+          <h3>Fallen Angel Hoodie</h3>
+          <p class="price">$75</p>
+          <p class="stock">Limited Drop — Only 7 Left</p>
+          <button onclick="addToCart('Fallen Angel Hoodie', 75)">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="images/Angel Tshirt 01.png" alt="Fallen Angel Tee" />
+        <div class="product-info">
+          <h3>Fallen Angel Tee</h3>
+          <p class="price">$45</p>
+          <p class="stock">Limited Drop — Only 12 Left</p>
+          <button onclick="addToCart('Fallen Angel Tee', 45)">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="images/angel doll 01.png" alt="NSS Angel Keychain" />
+        <div class="product-info">
+          <h3>NSS Angel Keychain</h3>
+          <p class="price">$15</p>
+          <p class="stock">Limited Drop — Only 20 Left</p>
+          <button onclick="addToCart('NSS Angel Keychain', 15)">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <aside class="cart" id="cart">
+    <button class="cart-close" onclick="toggleCart()">×</button>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p class="cart-total">Total: $<span id="cartTotal">0</span></p>
+    <button class="checkout" onclick="checkout()">Checkout</button>
+  </aside>
+
+  <button class="cart-button" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+
+  <div class="popup" id="popup">
+    <div class="popup-box">
+      <button class="popup-close" onclick="closePopup()">×</button>
+      <h2>Join The Society</h2>
+      <p>Enter your email for exclusive discounts and private drops.</p>
+      <input type="email" placeholder="Email address" />
+      <button onclick="closePopup()">Subscribe</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>NO SAINTS SOCIETY</p>
+    <p>
+      Operated by WAFFLES CREATIVE LLC<br>
+      PO BOX 60063<br>
+      PALM BAY, FL 32906
+    </p>
+    <p>© 2026 NO SAINTS SOCIETY. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
