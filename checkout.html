@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | No Saints Society</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="siteHeader"></div>
+
+<section class="checkout-page">
+  <h1>CHECKOUT</h1>
+
+  <div class="checkout-layout">
+    <form class="checkout-form">
+      <h2>SHIPPING INFORMATION</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Shipping Address" required>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="State" required>
+      <input type="text" placeholder="ZIP Code" required>
+
+      <h2>PAYMENT INFORMATION</h2>
+      <input type="text" placeholder="Card Number" required>
+      <input type="text" placeholder="MM / YY" required>
+      <input type="text" placeholder="CVV" required>
+
+      <button type="button" onclick="placeOrder()">PLACE ORDER</button>
+    </form>
+
+    <div class="checkout-summary">
+      <h2>ORDER SUMMARY</h2>
+      <p>Subtotal: $<span id="checkoutSubtotal">0</span></p>
+      <p>Shipping: $<span id="checkoutShipping">8</span></p>
+      <hr>
+      <h3>Total: $<span id="checkoutTotal">0</span></h3>
+    </div>
+  </div>
+</section>
+
+<div id="siteFooter"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
