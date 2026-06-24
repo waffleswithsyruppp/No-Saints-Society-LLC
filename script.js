@@ -149,6 +149,7 @@ function renderHeaderFooter() {
         <button class="hamburger" onclick="toggleMenu()">☰</button>
 
         <nav class="top-nav">
+          <a href="index.html">HOME</a>
           <a href="shop.html">SHOP</a>
           <a href="collections.html">LIMITED COLLECTIONS</a>
           <a href="about.html">ABOUT US</a>
@@ -163,6 +164,7 @@ function renderHeaderFooter() {
 
       <aside class="side-menu" id="sideMenu">
         <button class="side-close" onclick="closeMenu()">×</button>
+        <a href="index.html">HOME</a>
         <a href="shop.html">SHOP</a>
         <div class="side-sub">
           <a href="collections.html">LIMITED COLLECTIONS</a>
