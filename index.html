@@ -9,7 +9,6 @@
 
 <body>
 
-<!-- EMAIL POPUP -->
 <div class="popup" id="popup">
     <div class="popup-content">
         <span class="close-popup" onclick="closePopup()">&times;</span>
@@ -20,111 +19,71 @@
     </div>
 </div>
 
-<!-- CART BUTTON -->
 <button class="cart-button" onclick="toggleCart()">
     Cart (<span id="cartCount">0</span>)
 </button>
 
-<!-- CART -->
 <div class="cart" id="cart">
     <h2>Your Cart</h2>
-
     <div id="cartItems"></div>
-
     <h3>Total: $<span id="cartTotal">0</span></h3>
-
-    <button class="checkout-btn" onclick="checkout()">
-        Checkout
-    </button>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
 </div>
 
-<!-- HERO IMAGE -->
 <section class="hero">
     <img src="images/NSS home page.png" alt="No Saints Society" class="hero-image">
 </section>
 
-<!-- PRODUCTS -->
 <section class="products">
-
     <h2>DROP 001</h2>
 
     <div class="product-grid">
 
         <div class="product-card">
-            <img src="images/Angel Hoodie 01.png">
-
+            <a href="fallen-angel-hoodie.html" target="_blank">
+                <img src="images/Angel Hoodie 01.png" alt="Fallen Angel Hoodie">
+            </a>
             <div class="product-info">
                 <h3>Fallen Angel Hoodie</h3>
-
                 <p>$75</p>
-
-                <p class="stock">
-                    LIMITED DROP — ONLY 7 LEFT
-                </p>
-
-                <select id="hoodieSize">
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                </select>
-
-                <button onclick="addToCart('Fallen Angel Hoodie',75)">
-                    Add To Cart
-                </button>
+                <p class="stock">LIMITED DROP — ONLY 7 LEFT</p>
+                <a href="fallen-angel-hoodie.html" target="_blank">
+                    <button>View Product</button>
+                </a>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="images/Angel Tshirt 01.png">
-
+            <a href="fallen-angel-tee.html" target="_blank">
+                <img src="images/Angel Tshirt 01.png" alt="Fallen Angel Tee">
+            </a>
             <div class="product-info">
                 <h3>Fallen Angel Tee</h3>
-
                 <p>$45</p>
-
-                <p class="stock">
-                    LIMITED DROP — ONLY 12 LEFT
-                </p>
-
-                <select id="teeSize">
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                </select>
-
-                <button onclick="addToCart('Fallen Angel Tee',45)">
-                    Add To Cart
-                </button>
+                <p class="stock">LIMITED DROP — ONLY 12 LEFT</p>
+                <a href="fallen-angel-tee.html" target="_blank">
+                    <button>View Product</button>
+                </a>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="images/angel doll 01.png">
-
+            <a href="nss-angel-keychain.html" target="_blank">
+                <img src="images/angel doll 01.png" alt="NSS Angel Keychain">
+            </a>
             <div class="product-info">
                 <h3>NSS Angel Keychain</h3>
-
-                <p>$15</p>
-
-                <p class="stock">
-                    LIMITED DROP — ONLY 20 LEFT
-                </p>
-
-                <button onclick="addToCart('NSS Angel Keychain',15)">
-                    Add To Cart
-                </button>
+                <p>$25</p>
+                <p class="stock">LIMITED DROP — ONLY 20 LEFT</p>
+                <a href="nss-angel-keychain.html" target="_blank">
+                    <button>View Product</button>
+                </a>
             </div>
         </div>
 
     </div>
-
 </section>
 
-<!-- FOOTER -->
 <footer>
     <h3>NO SAINTS SOCIETY</h3>
 
@@ -134,10 +93,7 @@
         PALM BAY, FL 32906
     </p>
 
-    <p>
-        Exclusive. Private. No Exceptions.
-    </p>
-
+    <p>Exclusive. Private. No Exceptions.</p>
 </footer>
 
 <script src="script.js"></script>
