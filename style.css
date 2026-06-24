@@ -161,3 +161,45 @@ border-top:1px solid rgba(155,77,255,.2);
 line-height:2;
 color:#999;
 }
+
+.product-page{
+min-height:100vh;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+padding:80px 8%;
+background:#050505;
+align-items:center;
+}
+
+.product-page img{
+width:100%;
+background:white;
+}
+
+.product-page h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.product-page p{
+margin:12px 0;
+line-height:1.6;
+color:#ddd;
+}
+
+.product-page h3{
+margin-top:30px;
+color:white;
+}
+
+.product-page select{
+margin:25px 0;
+}
+
+@media(max-width:900px){
+.product-page{
+grid-template-columns:1fr;
+padding:40px 5%;
+}
+}
