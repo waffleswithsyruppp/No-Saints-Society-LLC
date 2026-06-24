@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>No Saints Society</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No Saints Society</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<div id="siteHeader"></div>
+
 <div class="popup" id="popup">
-  <div class="popup-content">
-    <span class="close-popup" onclick="closePopup()">&times;</span>
-    <h2>JOIN THE SOCIETY</h2>
-    <p>Subscribe for exclusive discounts, limited drops, and private releases.</p>
-    <input type="email" placeholder="Enter Email">
-    <button onclick="closePopup()">Subscribe</button>
-  </div>
-</div>
-
-<button class="cart-button" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
-
-<div class="cart" id="cart">
-  <h2>Your Cart</h2>
-  <div id="cartItems"></div>
-  <h3>Total: $<span id="cartTotal">0</span></h3>
-  <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    <div class="popup-content">
+        <button class="close-popup" onclick="closePopup()">×</button>
+        <h2>JOIN THE SOCIETY</h2>
+        <p>Subscribe for exclusive discounts, limited drops, and private releases.</p>
+        <input type="email" placeholder="Enter Email">
+        <button onclick="closePopup()">Subscribe</button>
+    </div>
 </div>
 
 <section class="hero">
-  <img src="images/NSS home page.png" alt="No Saints Society" class="hero-image">
+    <img src="images/NSS home page.png" alt="No Saints Society" class="hero-image">
 </section>
 
 <section class="products" id="shop">
-  <h2>DROP 001</h2>
-  <div class="product-grid" id="productGrid"></div>
+    <p class="eyebrow">DROP 001</p>
+    <h2>FEATURED DROP</h2>
+    <div class="product-grid" id="productGrid"></div>
 </section>
 
-<footer>
-  <h3>NO SAINTS SOCIETY</h3>
-  <p>
-    Operated by WAFFLES CREATIVE LLC<br>
-    PO BOX 60063<br>
-    PALM BAY, FL 32906
-  </p>
-  <p>Exclusive. Private. No Exceptions.</p>
-</footer>
+<section class="about-preview">
+    <h2>FALLEN ANGELS</h2>
+    <p>
+        No Saints Society is built for the ones still becoming.
+        There are no saints here — only people doing their best,
+        carrying their scars, and choosing to rise anyway.
+    </p>
+    <a href="about.html"><button>READ OUR STORY</button></a>
+</section>
+
+<div id="siteFooter"></div>
 
 <script src="products.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
