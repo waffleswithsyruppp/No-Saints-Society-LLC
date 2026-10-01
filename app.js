@@ -15,9 +15,9 @@ $('#logo').onload=()=>{$('#logo').hidden=false;$('#wordmark').hidden=true;};
 if($('#logo').complete&&$('#logo').naturalWidth)$('#logo').onload();
 function renderCollection(id){
   activeCollection=data.collections.find(c=>c.id===id)||data.collections.find(c=>c.status==='CURRENT');
-  if(!activeCollection)throw new Error('No current collection is configured.');
+  if(!activeCollection)throw new Error('No collection is configured.');
   const products=activeCollection.productIds.map(id=>data.products.find(p=>p.id===id)).filter(Boolean);
-  $('#main').innerHTML=`<section class="collection-heading"><span class="eyebrow">${activeCollection.status==='CURRENT'?'CURRENT COLLECTION':'FALLEN ANGELS / ARCHIVE'}</span><h1>${esc(activeCollection.title)}</h1></section><section class="grid" aria-label="Products">${products.map(p=>{const v=p.variants[0],sold=!p.variants.some(v=>v.available);return `<button class="product-card" data-product="${esc(p.id)}"><div class="photo">${img(p.images[0])}</div><div class="card-meta"><span>${esc(p.title)}</span><span class="price">${v?money(Math.min(...p.variants.map(v=>v.price)),v.currency):'Unavailable'}</span></div><div class="card-note">${sold?'SOLD OUT':'UNISEX'}</div></button>`;}).join('')}</section>${products.length?'':'<p class="empty">This collection is coming soon.</p>'}`;
+  $('#main').innerHTML=`<section class="collection-heading"><span class="eyebrow">${activeCollection.status==='FALLEN ANGELS / ARCHIVE'}</span><h1>${esc(activeCollection.title)}</h1></section><section class="grid" aria-label="Products">${products.map(p=>{const v=p.variants[0],sold=!p.variants.some(v=>v.available);return `<button class="product-card" data-product="${esc(p.id)}"><div class="photo">${img(p.images[0])}</div><div class="card-meta"><span>${esc(p.title)}</span><span class="price">${v?money(Math.min(...p.variants.map(v=>v.price)),v.currency):'Unavailable'}</span></div><div class="card-note">${sold?'SOLD OUT':'UNISEX'}</div></button>`;}).join('')}</section>${products.length?'':'<p class="empty">This collection is coming soon.</p>'}`;
   document.title=`${activeCollection.title} — NO SAINTS SOCIETY`;
   $('#main').querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>showProduct(b.dataset.product));
 }
