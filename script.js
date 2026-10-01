@@ -195,11 +195,6 @@ function renderHeaderFooter() {
     footer.innerHTML = `
       <footer>
         <h3>NO SAINTS SOCIETY</h3>
-        <p>
-          Operated by WAFFLES CREATIVE LLC<br>
-          PO BOX 60063<br>
-          PALM BAY, FL 32906
-        </p>
         <p>Exclusive. Private. No Exceptions.</p>
       </footer>
     `;
