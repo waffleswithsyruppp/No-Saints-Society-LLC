@@ -37,18 +37,27 @@ export const catalog = {
       ],
       variants: variants('tee',65)
     },
-
-    {
-      id: 'hoodie',
-      title: 'ANGEL HOODIE',
-      description: 'A relaxed oversized silhouette. Final fabric, fit and care details to follow.',
-      images: [
-        {url:'assets/angel-hoodie-front.png', alt:'Angel Hoodie front view'},
-        {url:'assets/angel-hoodie-back.png', alt:'Angel Hoodie back view'}
-      ],
-      variants: variants('hoodie',140,4)
-    },
-
+  {
+    id: 'hoodie',
+    title: 'ANGEL HOODIE',
+    description: 'A relaxed oversized silhouette.',
+    images: [
+      {url:'assets/000-hoodie-front.png', alt:'Angel Hoodie front view'},
+      {url:'assets/000-hoodie-back.png', alt:'Angel Hoodie back view'}
+    ],
+    variants: variants('hoodie',140,4)
+  },
+    
+  {
+  id: 'hoodie',
+  title: 'ANGEL HOODIE',
+  description: 'A relaxed oversized silhouette.',
+  images: [
+    {url:'assets/000-hoodie-front.png', alt:'Angel Hoodie front view'},
+    {url:'assets/000-hoodie-back.png', alt:'Angel Hoodie back view'}
+  ],
+  variants: variants('hoodie',140,4)
+},
     {
       id: 'pants',
       title: 'SWEATPANTS',
