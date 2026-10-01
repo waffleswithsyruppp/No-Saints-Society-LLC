@@ -22,7 +22,7 @@ function renderCollection(id){
   $('#main').querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>showProduct(b.dataset.product));
 }
 $('.brand').onclick=e=>{e.preventDefault();if(!data)return;if(layer.open)close();renderCollection();window.scrollTo(0,0);};
-$('#archive-button').onclick=()=>{if(!data)return;open('COLLECTION','archive');$('#layer-content').innerHTML=`<nav class="archive-menu"><p class="eyebrow">CURRENT</p>${data.collections.filter(c=>c.status==='CURRENT').map(collectionLink).join('')}<p class="eyebrow">FALLEN ANGELS</p>${data.collections.filter(c=>c.status==='ARCHIVE').map(collectionLink).join('')||'<p>No archived collections yet.</p>'}</nav>`;$('#layer-content').querySelectorAll('[data-collection]').forEach(b=>b.onclick=()=>{renderCollection(b.dataset.collection);close();window.scrollTo(0,0);$('#main').focus();});};
+$('#archive-button').onclick=()=>{if(!data)return;open('COLLECTION','archive');$('#layer-content').innerHTML=`<nav class="archive-menu"><p class="eyebrow"></p>${data.collections.filter(c=>c.status==='CURRENT').map(collectionLink).join('')}<p class="eyebrow">FALLEN ANGELS</p>${data.collections.filter(c=>c.status==='ARCHIVE').map(collectionLink).join('')||'<p>No archived collections yet.</p>'}</nav>`;$('#layer-content').querySelectorAll('[data-collection]').forEach(b=>b.onclick=()=>{renderCollection(b.dataset.collection);close();window.scrollTo(0,0);$('#main').focus();});};
 function collectionLink(c){return `<button class="archive-link" data-collection="${esc(c.id)}"><span>${esc(c.title)}</span><small>VIEW COLLECTION</small></button>`;}
 function showProduct(id){
   const p=data.products.find(p=>p.id===id);let index=0;
