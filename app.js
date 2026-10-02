@@ -12,6 +12,7 @@ function open(title,type){opener=layer.open?opener:document.activeElement;view=t
 function close(){layer.close();view='';opener?.focus();}
 $('#close-layer').onclick=close;layer.addEventListener('close',()=>{view='';document.body.append($('#notice'));});
 $('#logo').onload=()=>{$('#logo').hidden=false;$('#wordmark').hidden=true;};
+$('#logo').onerror=()=>{$('#logo').hidden=true;$('#wordmark').hidden=false;};
 if($('#logo').complete&&$('#logo').naturalWidth)$('#logo').onload();
 function renderCollection(id){
   activeCollection=data.collections.find(c=>c.id===id)||data.collections.find(c=>c.status==='CURRENT');

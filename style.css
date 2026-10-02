@@ -20,7 +20,9 @@ header{
   font-size:13px;
   letter-spacing:.1em;
   min-height:44px;
-  white-space:nowrap;
+  max-width:calc(50% - 115px);
+  white-space:normal;
+  text-align:left;
 }
 
 .brand{
@@ -39,6 +41,8 @@ header{
   object-fit:contain;
   display:block;
 }
+
+.brand [hidden]{display:none}
 
 #wordmark{
   font-size:23px;
@@ -457,7 +461,7 @@ body:has(dialog[open]){overflow:hidden}
 
   #archive-button{
     width:88px;
-    max-width:88px;
+    max-width:calc(50% - 65px);
     white-space:normal;
     text-align:left;
     font-size:9px;
