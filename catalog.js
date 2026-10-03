@@ -28,15 +28,18 @@ export const catalog = {
   ],
 
   products: [
+
     {
-      id: 'tee',
-      title: 'OVERSIZED TEE',
-      description: 'An oversized silhouette. Final fabric, fit and care details to follow.',
-      images: [
-        {url:'assets/tee.png', alt:'Black oversized tee, front view'}
-      ],
-      variants: variants('tee',65)
-    },
+  id: 'tee',
+  title: 'OVERSIZED TEE',
+  description: 'Oversized streetwear tee.',
+  images: [
+    {url:'assets/000-tshirt-front.png', alt:'NO SAINTS SOCIETY oversized tee front'},
+    {url:'assets/000-tshirt-back.png', alt:'NO SAINTS SOCIETY oversized tee back'}
+  ],
+  variants: variants('tee',65)
+},
+    
   {
     id: 'hoodie',
     title: 'ANGEL HOODIE',
