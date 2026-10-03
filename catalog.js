@@ -61,15 +61,23 @@ export const catalog = {
   ],
   variants: variants('hoodie',140,4)
 },
+
     {
-      id: 'pants',
-      title: 'SWEATPANTS',
-      description: 'A loose silhouette. Final fabric, fit and care details to follow.',
-      images: [
-        {url:'assets/pants.png', alt:'Black loose sweatpants, front view'}
-      ],
-      variants: variants('pants',110,6)
+  id: 'pants',
+  title: 'JOGGERS',
+  description: 'Black oversized joggers with elastic waistband and cinched ankles.',
+  images: [
+    {
+      url: 'assets/000-joggers-front.png',
+      alt: 'Black joggers, front view'
     },
+    {
+      url: 'assets/000-joggers-back.png',
+      alt: 'Black joggers, back view'
+    }
+  ],
+  variants: variants('pants', 110, 6)
+},
 
     {
       id: 'archive',
